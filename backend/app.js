@@ -12,7 +12,7 @@ const postRoutes = require("./routes/post");
 const commentRoutes = require("./routes/comment");
 
 // Database Connection
-const sequelize = new Sequelize("groupomania", "root", "Lj2P3S27NgIV", {
+const sequelize = new Sequelize("groupomania", "root", "Tom//5&&", {
   host: "localhost",
   dialect: "mysql",
 });

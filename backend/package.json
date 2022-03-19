@@ -16,6 +16,7 @@
     "nodemon": "^2.0.15",
     "password-validator": "^5.2.1",
     "sequelize": "^6.17.0",
+    "sequelize-auto-migrations": "^1.0.3",
     "sequelize-cli": "^6.4.1"
   }
 }
