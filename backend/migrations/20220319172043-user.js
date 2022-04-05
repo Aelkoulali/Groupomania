@@ -28,14 +28,6 @@ module.exports = {
         allowNull: true,
         type: Sequelize.STRING,
       },
-      service: {
-        allowNull: false,
-        type: Sequelize.STRING,
-      },
-      dateOfBirth: {
-        allowNull: true,
-        type: Sequelize.DATEONLY,
-      },
       isAdmin: {
         allowNull: false,
         type: Sequelize.BOOLEAN,

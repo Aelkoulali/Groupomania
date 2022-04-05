@@ -1,7 +1,8 @@
 const models = require("../models");
 const fs = require("fs");
+const jwt = require("jsonwebtoken");
 
-/* Crate One Post */
+/* Création d'une publication */
 
 exports.createPost = (req, res, next) => {
   const postObject = {
@@ -13,19 +14,29 @@ exports.createPost = (req, res, next) => {
     postObject.image = req.file.filename;
   }
   if (req.body.content == undefined && req.file == undefined) {
-    return res.status(400).json({ message: "Votre publication est vide !" });
+    return res.status(400).json({
+      message: "Votre publication est vide !"
+    });
   }
   console.log(postObject);
   models.Post.create(postObject)
 
-    .then(() => res.status(201).json({ message: "Post publié !" }))
-    .catch((error) => res.status(400).json({ error }));
+    .then(() => res.status(201).json({
+      message: "Post publié !"
+    }))
+    .catch((error) => res.status(400).json({
+      error
+    }));
 };
 
-/* Modify And Update One Post */
+/* Modification d'une publication */
 
 exports.modifyPost = (req, res, next) => {
-  models.Post.findOne({ where: { id: req.params.id } })
+  models.Post.findOne({
+      where: {
+        id: req.params.id
+      }
+    })
     .then((post) => {
       if (post.User_id !== req.auth.userId) {
         res.status(403).json({
@@ -53,67 +64,70 @@ exports.modifyPost = (req, res, next) => {
           .update(postObject)
           .then(() =>
             res
-              .status(200)
-              .json({ post: postObject, message: "Post modifié !" })
+            .status(200)
+            .json({
+              post: postObject,
+              message: "Post modifié !"
+            })
           )
           .catch((error) => res.status(400).json(error));
       }
     })
-    .catch((error) => res.status(500).json({ error }));
+    .catch((error) => res.status(500).json({
+      error
+    }));
 };
 
-/* Display All Posts */
+/* Affichage de toutes les publications */
 
 exports.getAllPosts = (req, res, next) => {
   models.Post.findAll({
-    order: [["createdAt", "DESC"]],
-    attributes: ["id", "User_id", "content", "image", "createdAt", "updatedAt"],
-    include: [
-      {
-        model: models.User,
-        attributes: ["lastName", "firstName", "avatar"],
-      },
-      {
-        model: models.Comment,
-        attributes: ["id", "User_id", "content", "image", "createdAt", "UpdatedAt"],
-        include: [
-          {
+      order: [
+        ["createdAt", "DESC"]
+      ],
+      attributes: ["id", "User_id", "content", "image", "createdAt", "updatedAt"],
+      include: [{
+          model: models.User,
+          attributes: ["lastName", "firstName", "avatar"],
+        },
+        {
+          model: models.Comment,
+          attributes: ["id", "User_id", "content", "image", "createdAt", "UpdatedAt"],
+          include: [{
             model: models.User,
             attributes: ["lastName", "firstName", "avatar"],
-          },
-        ],
-      },
-    ],
-  })
+          }, ],
+        },
+      ],
+    })
     .then((posts) => res.status(200).json(posts))
     .catch((error) => {
       res.status(500).json(error);
     });
 };
 
-/* Display One Post */
+/* Affichage d'une publication */
 
 exports.getOnePost = (req, res, next) => {
   models.Post.findOne({
-    where: { id: req.params.id },
-    attributes: ["id", "User_id", "content", "image", "createdAt", "updatedAt"],
-    include: [
-      {
-        model: models.User,
-        attributes: ["lastName", "firstName", "avatar"],
+      where: {
+        id: req.params.id
       },
-      {
-        model: models.Comment,
-        attributes: ["id", "User_id", "content", "image", "createdAt", "updatedAt"],
-        include: [
-          {
+      attributes: ["id", "User_id", "content", "image", "createdAt", "updatedAt"],
+      include: [{
+          model: models.User,
+          attributes: ["lastName", "firstName", "avatar"],
+        },
+        {
+          model: models.Comment,
+          attributes: ["id", "User_id", "content", "image", "createdAt", "updatedAt"],
+          include: [{
             model: models.User,
             attributes: ["lastName", "firstName", "avatar"],
-          },
-        ],
-      },
-    ],
-  })
+          }, ],
+        },
+      ],
+    })
 
     .then((post) => res.status(200).json(post))
     .catch((error) => res.status(500).json(error));
@@ -122,18 +136,34 @@ exports.getOnePost = (req, res, next) => {
 /* Suppression d'une publication */
 
 exports.deletePost = (req, res, next) => {
-  models.Post.findOne({ where: { id: req.params.id } })
+  const token = req.headers.authorization.split(" ")[1];
+  const decodedToken = jwt.verify(token, "RANDOM_TOKEN_SECRET");
+  const isAdmin = decodedToken.isAdmin;
+  models.Post.findOne({
+      where: {
+        id: req.params.id
+      }
+    })
     .then((post) => {
-      if (post.User_id !== req.auth.userId) {
-        res.status(403).json({ error: "Unauthorized request" });
-      } else if (post.User_id == req.auth.userId) {
+      if (!isAdmin && post.User_id !== req.auth.userId) {
+        console.log(isAdmin);
+        res.status(403).json({
+          error: "Unauthorized request"
+        });
+      } else {
         fs.unlink(`images/posts/${post.image}`, () => {
           post
             .destroy()
-            .then(() => res.status(200).json({ message: "Post supprimé !" }))
-            .catch((error) => res.status(400).json({ error }));
+            .then(() => res.status(200).json({
+              message: "Post supprimé !"
+            }))
+            .catch((error) => res.status(400).json({
+              error
+            }));
         });
       }
     })
-    .catch((error) => res.status(500).json({ error }));
+    .catch((error) => res.status(500).json({
+      error
+    }));
 };

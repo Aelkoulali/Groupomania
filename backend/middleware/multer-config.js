@@ -46,6 +46,6 @@ const storageComments = multer.diskStorage({
   },
 });
 
-exports.users = multer({ storage: storageUsers }).single("image");
+exports.users = multer({ storage: storageUsers }).single("avatar");
 exports.posts = multer({ storage: storagePosts }).single("image");
 exports.comments = multer({ storage: storageComments }).single("image");

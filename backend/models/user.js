@@ -32,8 +32,6 @@ module.exports = (sequelize, DataTypes) => {
       email: { type: DataTypes.STRING, allowNull: false, unique: true },
       password: { type: DataTypes.STRING, allowNull: false },
       avatar: { type: DataTypes.STRING, allowNull: true },
-      service: { type: DataTypes.STRING, allowNull: false },
-      dateOfBirth: { type: DataTypes.DATEONLY, allowNull: true },
       isAdmin: { type: DataTypes.BOOLEAN, defaultValue: 0 },
     },
     {

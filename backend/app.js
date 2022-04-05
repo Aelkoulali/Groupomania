@@ -1,6 +1,7 @@
 // Imports
 const express = require("express");
 const path = require("path");
+require("dotenv").config();
 
 const Sequelize = require("sequelize");
 // Express
@@ -24,7 +25,7 @@ try {
   console.error("Impossible de se connecter à la base de données:", error);
 }
 
-// CORS Error Handeler
+// Cors Error Handler
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader(
@@ -40,7 +41,7 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-// Middleware
+// Endpoints
 app.use("/images", express.static(path.join(__dirname, "images")));
 app.use("/api/auth", userRoutes);
 app.use("/api/post", postRoutes);
