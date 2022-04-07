@@ -2,7 +2,7 @@ const models = require("../models");
 const fs = require("fs");
 const jwt = require("jsonwebtoken");
 
-/* Création d'un commentaire */
+/* Create One Comment */
 
 exports.createComment = (req, res, next) => {
   const commentObject = {
@@ -30,7 +30,7 @@ exports.createComment = (req, res, next) => {
     }));
 };
 
-/* Modification d'un commentaire */
+/* Modify One Comment */
 
 exports.modifyComment = (req, res, next) => {
   models.Comment.findOne({
@@ -77,7 +77,7 @@ exports.modifyComment = (req, res, next) => {
     }));
 };
 
-/* Suppression d'un commentaire */
+/* Delete One Comment */
 
 exports.deleteComment = (req, res, next) => {
   const token = req.headers.authorization.split(" ")[1];
@@ -114,7 +114,7 @@ exports.deleteComment = (req, res, next) => {
     }));
 };
 
-/* Affichage de tous les commentaires */
+/* Display All Comments */
 
 exports.getAllComments = (req, res, next) => {
   models.Comment.findAll({

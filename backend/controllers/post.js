@@ -2,7 +2,7 @@ const models = require("../models");
 const fs = require("fs");
 const jwt = require("jsonwebtoken");
 
-/* Création d'une publication */
+/* Create Post */
 
 exports.createPost = (req, res, next) => {
   const postObject = {
@@ -29,7 +29,7 @@ exports.createPost = (req, res, next) => {
     }));
 };
 
-/* Modification d'une publication */
+/* Modify Post */
 
 exports.modifyPost = (req, res, next) => {
   models.Post.findOne({
@@ -78,7 +78,7 @@ exports.modifyPost = (req, res, next) => {
     }));
 };
 
-/* Affichage de toutes les publications */
+/* Display All Posts */
 
 exports.getAllPosts = (req, res, next) => {
   models.Post.findAll({
@@ -106,7 +106,7 @@ exports.getAllPosts = (req, res, next) => {
     });
 };
 
-/* Affichage d'une publication */
+/* Display One Post */
 
 exports.getOnePost = (req, res, next) => {
   models.Post.findOne({
@@ -133,7 +133,7 @@ exports.getOnePost = (req, res, next) => {
     .catch((error) => res.status(500).json(error));
 };
 
-/* Suppression d'une publication */
+/* Delete One Post */
 
 exports.deletePost = (req, res, next) => {
   const token = req.headers.authorization.split(" ")[1];
