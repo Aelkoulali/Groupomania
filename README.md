@@ -7,9 +7,6 @@
     Gérer un stockage de données à l'aide de SQL
     Implémenter un stockage de données sécurisé en utilisant SQL
 
-## Technologies utilisées :
-
-NodeJs - VueJs - MySQL - Sass
 
 
 INSTALLATION
@@ -30,7 +27,7 @@ Ouvrir un terminal dans le dossier backend puis effectuer les lignes de commande
 
 npm install
 
-nodemon server
+npm start
 
 ## FRONT END 
 
