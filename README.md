@@ -35,7 +35,7 @@ Ouvrir le navigateur a l'adresse http://localhost:8080/
     Authentification d'un utilisateur et maintien de sa session
     Personnalisation du contenu envoyé à un client web
     Gestion d'un stockage de données sécurisé à l'aide de SQL
-    Création d'un compte Admin pour la modération ( supression des publications ) 
+    Création d'un compte Admin pour la modération ( suppression des publications ) 
 	
     Les codes Admin:
 	
