@@ -1,13 +1,13 @@
-Groupomania - Réseau social d'entreprise
+# Groupomania - Réseau social d'entreprise
 
-- Compétences évaluées :
+## Compétences évaluées :
 
     Authentifier un utilisateur et maintenir sa session
     Personnaliser le contenu envoyé à un client web
     Gérer un stockage de données à l'aide de SQL
     Implémenter un stockage de données sécurisé en utilisant SQL
 
-- Technologies utilisées :
+## Technologies utilisées :
 
 NodeJs - VueJs - MySQL - Sass
 
@@ -24,7 +24,7 @@ Il vous faut avoir installé sur votre machine :
 Créer un dossier vide puis cloner ce repository à l'intérieur :
 git clone https://github.com/Aelkoulali/Groupomania.git
 
--- BACK END --
+## BACK END 
 
 Ouvrir un terminal dans le dossier backend puis effectuer les lignes de commandes suivantes :
 
@@ -32,7 +32,7 @@ npm install
 
 nodemon server
 
--- FRONT END --
+## FRONT END 
 
 Ouvrir un autre terminal dans le dossier frontend puis effectuer les lignes de commandes suivantes :
 
@@ -43,7 +43,7 @@ npm run serve
 Ouvrir le navigateur a l'adresse http://localhost:8080/
 
 
-Voici les codes d'accès admin :
+## les codes d'accès admin sont :
 
 admin@groupomania.com
 
