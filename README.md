@@ -1,4 +1,3 @@
-PROJET 7 - OPENCLASSROOMS - DEVELOPPEUR WEB
 Groupomania - Réseau social d'entreprise
 
 - Compétences évaluées :
@@ -43,8 +42,10 @@ npm run serve
 
 Ouvrir le navigateur a l'adresse http://localhost:8080/
 
+
 Voici les codes d'accès admin :
 
 admin@groupomania.com
 
 Admingroup22
+
