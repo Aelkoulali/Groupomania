@@ -1,22 +1,13 @@
 # Groupomania - Réseau social d'entreprise
 
-## Compétences évaluées :
-
-    Authentifier un utilisateur et maintenir sa session
-    Personnaliser le contenu envoyé à un client web
-    Gérer un stockage de données à l'aide de SQL
-    Implémenter un stockage de données sécurisé en utilisant SQL
-
-
-
 INSTALLATION
+
 Prérequis :
-
-Il vous faut avoir installé sur votre machine :
-
-    Git : https://git-scm.com/downloads
-    Node.js : https://nodejs.org/en/
-    MySql : https://dev.mysql.com/downloads/installer/
+```
+Git 
+Node.js
+MySQL
+```
 
 Créer un dossier vide puis cloner ce repository à l'intérieur :
 git clone https://github.com/Aelkoulali/Groupomania.git
@@ -39,10 +30,18 @@ npm run serve
 
 Ouvrir le navigateur a l'adresse http://localhost:8080/
 
+## Compétences évaluées :
 
-## les codes d'accès admin sont :
+    Authentifier un utilisateur et maintenir sa session
+    Personnaliser le contenu envoyé à un client web
+    Gérer un stockage de données à l'aide de SQL
+    Implémenter un stockage de données sécurisé en utilisant SQL
+	Création d'u compte Admin pour la modération ( supression des publications ) 
+	
+	Les codes Admin:
+	
+	admin@groupomania.com
+	Admingroup22
 
-admin@groupomania.com
 
-Admingroup22
 
