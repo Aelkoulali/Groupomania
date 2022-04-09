@@ -9,7 +9,7 @@ Node.js
 MySQL
 ```
 
-Créer un dossier vide puis cloner ce repository à l'intérieur :
+Créer un dossier vide puis cloner ce répertoire à l'intérieur :
 git clone https://github.com/Aelkoulali/Groupomania.git
 
 ## BACK END 
