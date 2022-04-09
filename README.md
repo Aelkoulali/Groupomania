@@ -32,11 +32,10 @@ Ouvrir le navigateur a l'adresse http://localhost:8080/
 
 ## Compétences évaluées :
 
-    Authentifier un utilisateur et maintenir sa session
-    Personnaliser le contenu envoyé à un client web
-    Gérer un stockage de données à l'aide de SQL
-    Implémenter un stockage de données sécurisé en utilisant SQL
-	Création d'u compte Admin pour la modération ( supression des publications ) 
+    Authentification d'un utilisateur et maintien de sa session
+    Personnalisation du contenu envoyé à un client web
+    Gestion d'un stockage de données sécurisé à l'aide de SQL
+    Création d'un compte Admin pour la modération ( supression des publications ) 
 	
 	Les codes Admin:
 	
