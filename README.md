@@ -37,10 +37,10 @@ Ouvrir le navigateur a l'adresse http://localhost:8080/
     Gestion d'un stockage de données sécurisé à l'aide de SQL
     Création d'un compte Admin pour la modération ( supression des publications ) 
 	
-	Les codes Admin:
+    Les codes Admin:
 	
-	admin@groupomania.com
-	Admingroup22
+	Login: admin@groupomania.com
+	Password: Admingroup22
 
 
 
