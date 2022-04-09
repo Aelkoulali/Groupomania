@@ -7,12 +7,13 @@ Prérequis :
 Git 
 Node.js
 MySQL
+
 ```
 
 Créer un dossier vide puis cloner ce répertoire à l'intérieur :
 git clone https://github.com/Aelkoulali/Groupomania.git
 
-## BACK END 
+## BACKEND 
 
 Ouvrir un terminal dans le dossier backend puis effectuer les lignes de commandes suivantes :
 
@@ -20,7 +21,7 @@ npm install
 
 npm start
 
-## FRONT END 
+## FRONTEND 
 
 Ouvrir un autre terminal dans le dossier frontend puis effectuer les lignes de commandes suivantes :
 
