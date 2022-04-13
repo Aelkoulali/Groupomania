@@ -13,6 +13,17 @@ MySQL
 Créer un dossier vide puis cloner ce répertoire à l'intérieur :
 git clone https://github.com/Aelkoulali/Groupomania.git
 
+## MySQL 
+
+Ouvrir MySql command Line client puis effectuer ces deux lignes de commandes :
+
+CREATE DATABASE groupomania;
+
+USE groupomania;
+
+Importer le fichier groupomania.sql (qui se trouve a la racine du projet) :
+
+
 ## BACKEND 
 
 Ouvrir un terminal dans le dossier backend puis effectuer les lignes de commandes suivantes :
