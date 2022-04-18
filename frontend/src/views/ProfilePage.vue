@@ -3,22 +3,22 @@
     <HeaderConnect />
     <!-- Display All Personnal User Data -->
     <div class="jumbotron">
-      <h2 class="text-center mb-5">
+      <h2 class="text-center mb-5"> 
         {{ userData.data.lastName }} {{ userData.data.firstName }}
       </h2>
       <div class="profile justify-content-between">
         <div class="modif_avatar_image d-flex flex-column">
           <img
-            class="user_avatar mr-2"
+            class="user_avatar mr-2" alt="user profile picture"
             v-if="userData.data.avatar != null"
             :src="
               require(`../../../backend/images/users/${userData.data.avatar}`)
             "
-          />
-          <img class="user_avatar mr-2" v-else src="../assets/avatar.png" />
+           />
+          <img class="user_avatar mr-2" v-else src="../assets/avatar.png "/>
           <div class="btn_modify_avatar d-flex justify-content-center">
             <button class="btn btn-info mt-2" @click="avatarForm = !avatarForm">
-              Modifier mon avatar
+              Modifier votre avatar
             </button>
           </div>
         </div>
@@ -64,7 +64,7 @@
 
     <div v-show="avatarForm" class="passwordForm jumbotron">
       <form>
-        <label for="avatar" class="label-avatar"></label>
+        <label for="avatar" class="input-file"></label>
         <input
           id="avatar"
           class="input-file"
@@ -72,7 +72,7 @@
           accept="image/png, image/jpeg, image/jpg"
           @change="onFileSelected"
         />
-        <button
+        <button 
           class="btn btn-info modif_avatar_btn"
           @click.prevent="modifyAvatar()"
         >

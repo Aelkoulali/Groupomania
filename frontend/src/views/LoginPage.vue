@@ -10,7 +10,7 @@
       <div class="row d-flex justify-content-center">
         <form class="connexion jumbotron">
           <div class="form-group">
-            <label for="exampleInputEmail1">Adresse ecdmail</label>
+            <label for="email">Adresse E-mail</label>
             <input
               v-model="dataLogin.email"
               type="email"

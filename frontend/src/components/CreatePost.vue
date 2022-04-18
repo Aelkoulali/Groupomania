@@ -3,9 +3,9 @@
     <form>
       <h2>Bienvenue {{ userData.data.firstName }} </h2>
       <div class="form-group">
-        <label for="content" aria-label="Texte du post"></label>
+        <label for="post-content" aria-label="Texte du post"></label>
         <textarea
-          id="content"
+          id="post-content"
           rows="5"
           v-model="post.content"
           class="form-control"

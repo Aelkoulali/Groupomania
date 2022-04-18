@@ -90,11 +90,11 @@
         <form>
           <h5 class="commentFormTitle">Ajouter un commentaire :</h5>
           <div class="form-group mb-0">
-            <label for="content" aria-label="Texte du commentaire"></label>
+            <label for="commentContent" aria-label="Texte du commentaire"></label>
             <input
               type="text"
-              id="content"
-              name="content"
+              id="commentContent"
+              name="comment"
               v-model="this.comment.content"
               class="form-control"
             />
