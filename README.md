@@ -45,7 +45,7 @@ git clone https://github.com/Aelkoulali/Groupomania.git
 
 ✅ Ouvrir le navigateur a l'adresse http://localhost:8080/
 
-## ➡️ Compétences évaluées :
+## ➡️ Compétences :
 
     ✅ Authentification d'un utilisateur et maintien de sa session
     ✅ Personnalisation du contenu envoyé à un client web
