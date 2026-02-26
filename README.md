@@ -1,4 +1,10 @@
-# 🗂️ Groupomania - Réseau social d'entreprise
+# 🗂️ Groupomania - Enterprise Social Network
+## ➡️ Key Concepts :
+## ✅ Enterprise Social Network Project
+## ✅ JavaScript + HTML + CSS
+## ✅ Form validation
+## ✅ Cart
+## ✅ User interface
 
 ![icon1](https://user-images.githubusercontent.com/77611825/167659300-1c075a71-6d64-49a1-8cff-7886ed82a1f6.png)
 
