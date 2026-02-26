@@ -2,7 +2,7 @@
 ## ➡️ Key Concepts :
 ## ✅ Enterprise Social Network Project
 ## ✅ Fullstack
-## ✅ 
+## ✅ JavaScript, HTML & CSS
 ## ✅ 
 ## ✅ 
 
