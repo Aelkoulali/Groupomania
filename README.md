@@ -12,24 +12,18 @@ Groupomania is an enterprise social network developed as a full-stack web applic
 - Node-js and Express-js
  
 ## ➡️ Key Concepts :
-## ✅ Enterprise Social Network Project
-## ✅ Fullstack
-## ✅ JavaScript, HTML & CSS
-## ✅ Vue-js
-## ✅ My SQL
+
 
 ![icon1](https://user-images.githubusercontent.com/77611825/167659300-1c075a71-6d64-49a1-8cff-7886ed82a1f6.png)
 
 
-## ➡️ INSTALLATION
+## 📥 INSTALLATION
 
-## ✅ Prérequis :
-```
-✅ Git 
-✅ Node.js
-✅ MySQL
+## ⚙️ tools 
+- Git
+- Node.js
+- MySQL
 
-```
 
 Créer un dossier vide puis cloner ce répertoire à l'intérieur :
 git clone https://github.com/Aelkoulali/Groupomania.git
