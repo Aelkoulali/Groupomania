@@ -35,19 +35,18 @@ Groupomania is an enterprise social network developed as a full-stack web applic
 ## ▶️ BACKEND 
 - Open a terminal inside the backend folder, then run the following commands:
 
-  - npm install.
-  - npm start.
+   - npm install.
+   - npm start.
 
 
 ## ▶️ FRONTEND 
+- Open another terminal inside the frontend folder, then run the following commands:
 
-✅ Ouvrir un autre terminal dans le dossier frontend puis effectuer les lignes de commandes suivantes :
+  - npm install
+  - npm run serve
+  - Open your browser at: http://localhost:8080/
 
-✅ npm install
 
-✅ npm run serve
-
-✅ Ouvrir le navigateur a l'adresse http://localhost:8080/
 
 ## ➡️ Compétences :
 
