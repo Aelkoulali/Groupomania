@@ -26,20 +26,18 @@ Groupomania is an enterprise social network developed as a full-stack web applic
 
 - Open the MySQL command-line client, then run these two commands :
 
-   1- CREATE DATABASE groupomania.
-
-   2- USE groupomania.
+   - Create DATABASE groupomania.
+   - Use groupomania.
 
 - Import the groupomania.sql file (located at the root of the project).
 
 
 ## ▶️ BACKEND 
+- Open a terminal inside the backend folder, then run the following commands:
 
-✅ Ouvrir un terminal dans le dossier backend puis effectuer les lignes de commandes suivantes :
+  - npm install.
+  - npm start.
 
-✅ npm install
-
-✅ npm start
 
 ## ▶️ FRONTEND 
 
