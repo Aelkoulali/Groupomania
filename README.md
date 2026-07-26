@@ -26,11 +26,11 @@ Groupomania is an enterprise social network developed as a full-stack web applic
 
 - Open the MySQL command-line client, then run these two commands :
 
-   1- CREATE DATABASE groupomania;
+   1- CREATE DATABASE groupomania.
 
-   2- USE groupomania;
+   2- USE groupomania.
 
-- Import the groupomania.sql file (located at the root of the project)
+- Import the groupomania.sql file (located at the root of the project).
 
 
 ## ▶️ BACKEND 
