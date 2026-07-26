@@ -9,7 +9,7 @@ Groupomania is an enterprise social network developed as a full-stack web applic
 - JavaScript, HTML & CSS
 - Vue-js
 - My SQL
-- Node-js  Express-js
+- Node-js and Express-js
  
 ## ➡️ Key Concepts :
 ## ✅ Enterprise Social Network Project
