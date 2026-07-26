@@ -56,17 +56,3 @@ Groupomania is an enterprise social network developed as a full-stack web applic
 - Login: admin@groupomania.com
 - Password: Admingroup22
 
-## ➡️ Compétences :
-
-    ✅ Authentification d'un utilisateur et maintien de sa session
-    ✅ Personnalisation du contenu envoyé à un client web
-    ✅ Gestion d'un stockage de données sécurisé à l'aide de SQL
-    ✅ Création d'un compte Admin pour la modération ( suppression des publications ) 
-	
-    👨🏽‍💻 Les codes Admin:
-	
-	Login: admin@groupomania.com
-	Password: Admingroup22
-
-
-
