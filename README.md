@@ -1,6 +1,16 @@
 # 🗂️ Groupomania - Enterprise Social Network
 Groupomania is an enterprise social network developed as a full-stack web application using Vue.js, Node.js, Express.js, and MySQL. The platform allows users to create accounts, share updates through comments, and chat with company colleagues. It also includes an admin account responsible for moderation, ensuring that only authorized and approved content is published within the application.
 
+## ✅ Key Features
+-
+-
+-
+## 🛠️ Tech Stack
+- JavaScript, HTML & CSS
+- Vue-js
+- My SQL
+- Node-js  Express-js
+ 
 ## ➡️ Key Concepts :
 ## ✅ Enterprise Social Network Project
 ## ✅ Fullstack
