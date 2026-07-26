@@ -13,7 +13,7 @@ Groupomania is an enterprise social network developed as a full-stack web applic
 
 ## 📥 INSTALLATION
 
-## ⚙️ tools 
+## ⚙️ tools needed
 - Git
 - Node.js
 - MySQL
