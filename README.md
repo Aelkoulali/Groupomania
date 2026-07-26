@@ -10,12 +10,6 @@ Groupomania is an enterprise social network developed as a full-stack web applic
 - Vue-js
 - My SQL
 - Node-js and Express-js
- 
-## ➡️ Key Concepts :
-
-
-![icon1](https://user-images.githubusercontent.com/77611825/167659300-1c075a71-6d64-49a1-8cff-7886ed82a1f6.png)
-
 
 ## 📥 INSTALLATION
 
@@ -24,22 +18,22 @@ Groupomania is an enterprise social network developed as a full-stack web applic
 - Node.js
 - MySQL
 
-
-Créer un dossier vide puis cloner ce répertoire à l'intérieur :
-git clone https://github.com/Aelkoulali/Groupomania.git
-
-## ➡️ MySQL 
-
-✅ Ouvrir MySql command Line client puis effectuer ces deux lignes de commandes :
-
-✅ CREATE DATABASE groupomania;
-
-✅ USE groupomania;
-
-✅ Importer le fichier groupomania.sql (qui se trouve a la racine du projet) :
+## ➡️ Create an empty folder, then clone this repository inside it:
+- git clone https://github.com/Aelkoulali/Groupomania.git
 
 
-## ➡️ BACKEND 
+## ▶️ MySQL 
+
+- Open the MySQL command-line client, then run these two commands :
+
+1- CREATE DATABASE groupomania;
+
+2- USE groupomania;
+
+- Import the groupomania.sql file (located at the root of the project)
+
+
+## ▶️ BACKEND 
 
 ✅ Ouvrir un terminal dans le dossier backend puis effectuer les lignes de commandes suivantes :
 
@@ -47,7 +41,7 @@ git clone https://github.com/Aelkoulali/Groupomania.git
 
 ✅ npm start
 
-## ➡️ FRONTEND 
+## ▶️ FRONTEND 
 
 ✅ Ouvrir un autre terminal dans le dossier frontend puis effectuer les lignes de commandes suivantes :
 
