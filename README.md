@@ -46,7 +46,15 @@ Groupomania is an enterprise social network developed as a full-stack web applic
   - npm run serve
   - Open your browser at: http://localhost:8080/
 
+## 💡 Skills
+- User authentication and session maintenance
+- Customizing the content sent to a web client
+- Secure data storage management using SQL
+- Creating an Admin account for moderation (deleting publications)
 
+##  👨🏻‍💻 Admin 🗝️ Login & Password
+- Login: admin@groupomania.com
+- Password: Admingroup22
 
 ## ➡️ Compétences :
 
