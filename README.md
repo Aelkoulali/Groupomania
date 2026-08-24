@@ -27,7 +27,6 @@ Groupomania is an enterprise social network developed as a full-stack web applic
 ## ✅ Create an empty folder, then clone this repository inside it:
 - git clone https://github.com/Aelkoulali/Groupomania.git
 
-
 ## ▶️ MySQL 
 
 - Open the MySQL command-line client, then run these two commands :
