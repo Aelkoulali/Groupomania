@@ -8,7 +8,7 @@ Groupomania is an enterprise social network developed as a full-stack web applic
 - Creating an Admin account for moderation (deleting publications)
 
 ##  👨🏻‍💻 Admin 🗝️ Login & Password
-- Login: admin@groupomania.com
+- Login: `admin@groupomania.com`
 - Password: Admingroup22
 
 ## 🛠️ Tech Stack
